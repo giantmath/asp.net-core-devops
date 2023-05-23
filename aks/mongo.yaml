@@ -1,0 +1,59 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongo-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mongodb
+  template:
+    metadata:
+      labels:
+        app: mongodb
+    spec:
+      containers:
+        - name: mongodb
+          image: mongo
+          command:
+            - "bash"
+            - "-c"
+            - |
+               mongo --eval "db.getSiblingDB('admin').createUser({user:'root',pwd:'password',roles:[{role:'root',db:'admin'}]});"
+          resources:
+            requests:
+              cpu: "250m"
+              memory: "200Mi"
+            limits:
+              memory: "500Mi"
+              cpu: "1"
+          ports:
+            - containerPort: 27017
+          readinessProbe:
+            tcpSocket:
+              port: 27017
+            initialDelaySeconds: 1
+            periodSeconds: 10
+          env:
+            - name: MONGO_INITDB_ROOT_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  key: mongo-root-username
+                  name: mongo-secret
+            - name: MONGO_INITDB_ROOT_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  key: mongo-root-password
+                  name: mongo-secret
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongo-service
+spec:
+  selector:
+    app: mongodb
+  ports: 
+    - protocol: TCP
+      port: 27017
+      targetPort: 27017

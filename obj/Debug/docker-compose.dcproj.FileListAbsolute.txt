@@ -1,0 +1,3 @@
+C:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\bin\Debug\Shopping.API.dll
+C:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\bin\Debug\Shopping.Client.dll
+C:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
