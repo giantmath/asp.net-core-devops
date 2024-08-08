@@ -1,0 +1,3 @@
+﻿C:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\docker-compose.override.yml
+C:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\docker-compose.yml
+C:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\.dockerignore

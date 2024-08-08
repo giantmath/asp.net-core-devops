@@ -8,12 +8,10 @@ namespace Shopping.Client.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
         private readonly HttpClient _client;
 
-        public HomeController(ILogger<HomeController> logger, IHttpClientFactory clientFactory)
+        public HomeController(IHttpClientFactory clientFactory)
         {
-            _logger = logger;
             _client = clientFactory.CreateClient("Shopping.Api.Client");
         }
 

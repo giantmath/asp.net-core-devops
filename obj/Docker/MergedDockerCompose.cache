@@ -3,25 +3,34 @@ services:
     build:
       context: C:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping
       dockerfile: Shopping.API/Dockerfile
+    container_name: shoppingapi
     depends_on:
       shopping.db:
         condition: service_started
     environment:
       ASPNETCORE_ENVIRONMENT: Development
+      DatabaseSettings:ConnectionString: mongodb://shopping.db:27017
     image: shoppingapi
     ports:
     - published: 8000
-      target: 4000
+      target: 80
   shopping.client:
     build:
       context: C:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping
       dockerfile: Shopping.Client/Dockerfile
+    container_name: shoppingclient
+    depends_on:
+      shopping.api:
+        condition: service_started
+      shopping.db:
+        condition: service_started
     environment:
       ASPNETCORE_ENVIRONMENT: Development
+      ShoppingApiClientHost: http://shoppingapi/
     image: shoppingclient
     ports:
     - published: 8001
-      target: 4001
+      target: 80
   shopping.db:
     container_name: shoppingdb
     image: mongo

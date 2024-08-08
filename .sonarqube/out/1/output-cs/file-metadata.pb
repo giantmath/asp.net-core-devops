@@ -1,0 +1,9 @@
+z
+qC:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\Shopping.API\Controllers\ProductController.csutf-8p
+gC:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\Shopping.API\Data\ProductContext.csutf-8k
+bC:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\Shopping.API\Models\Product.csutf-8d
+[C:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\Shopping.API\Program.csutf-8å
+ÄC:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\Shopping.API\obj\Debug\net6.0\Shopping.API.GlobalUsings.g.csutf-8ú
+êC:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\Shopping.API\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.csutf-8â
+~C:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\Shopping.API\obj\Debug\net6.0\Shopping.API.AssemblyInfo.csutf-8ù
+ëC:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\Shopping.API\obj\Debug\net6.0\Shopping.API.MvcApplicationPartsAssemblyInfo.csutf-8

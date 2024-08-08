@@ -1,0 +1,13 @@
+﻿C:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\Shopping.API\Controllers\ProductController.cs
+C:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\Shopping.API\Data\ProductContext.cs
+C:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\Shopping.API\Models\Product.cs
+C:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\Shopping.API\Program.cs
+C:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\Shopping.API\obj\Debug\net6.0\Shopping.API.GlobalUsings.g.cs
+C:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\Shopping.API\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+C:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\Shopping.API\obj\Debug\net6.0\Shopping.API.AssemblyInfo.cs
+C:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\Shopping.API\obj\Debug\net6.0\Shopping.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\Shopping.API\appsettings.Development.json
+C:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\Shopping.API\appsettings.json
+C:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\Shopping.API\Dockerfile
+C:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\Shopping.API\Properties\launchSettings.json
+C:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\.dockerignore

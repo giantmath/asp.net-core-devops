@@ -1,0 +1,17 @@
+z
+qC:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\Shopping.Client\Controllers\HomeController.csutf-8s
+jC:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\Shopping.Client\Data\ProductContext.csutf-8u
+lC:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\Shopping.Client\Models\ErrorViewModel.csutf-8n
+eC:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\Shopping.Client\Models\Product.csutf-8g
+^C:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\Shopping.Client\Program.csutf-8í
+ÜC:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\Shopping.Client\obj\Debug\net6.0\Shopping.Client.GlobalUsings.g.csutf-8ü
+ìC:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\Shopping.Client\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.csutf-8ê
+ÑC:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\Shopping.Client\obj\Debug\net6.0\Shopping.Client.AssemblyInfo.csutf-8ï
+âC:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\Shopping.Client\obj\Debug\net6.0\Shopping.Client.RazorAssemblyInfo.csutf-8è
+ÉMicrosoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Views_Home_Index_cshtml.g.csutf-8ë
+ÖMicrosoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Views_Home_Privacy_cshtml.g.csutf-8ë
+ÖMicrosoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Views_Shared_Error_cshtml.g.csutf-8•
+ôMicrosoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Views_Shared__ValidationScriptsPartial_cshtml.g.csutf-8ë
+ÖMicrosoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Views__ViewImports_cshtml.g.csutf-8è
+ÉMicrosoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Views__ViewStart_cshtml.g.csutf-8ì
+áMicrosoft.NET.Sdk.Razor.SourceGenerators\Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator\Views_Shared__Layout_cshtml.g.csutf-8

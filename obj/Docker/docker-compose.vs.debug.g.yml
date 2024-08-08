@@ -1,0 +1,65 @@
+version: '3.4'
+
+services:
+  shopping.api:
+    image: shoppingapi:dev
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "Shopping.API"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      - NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages;/root/.nuget/fallbackpackages2;/root/.nuget/fallbackpackages3;/root/.nuget/fallbackpackages4;/root/.nuget/fallbackpackages5
+    volumes:
+      - C:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\Shopping.API:/app
+      - C:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping:/src
+      - C:\Users\gmaharramov\vsdbg\vs2017u5:/remote_debugger:rw
+      - C:\Users\gmaharramov\.nuget\packages\:/root/.nuget/packages:ro
+      - C:\Program Files (x86)\DevExpress 21.1\Components\Offline Packages:/root/.nuget/fallbackpackages:ro
+      - C:\Program Files (x86)\DevExpress 21.2\Components\Offline Packages:/root/.nuget/fallbackpackages2:ro
+      - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:/root/.nuget/fallbackpackages3:ro
+      - C:\Program Files\DevExpress 22.1\Components\Offline Packages:/root/.nuget/fallbackpackages4:ro
+      - C:\Program Files\DevExpress 22.2\Components\Offline Packages:/root/.nuget/fallbackpackages5:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages --additionalProbingPath /root/.nuget/fallbackpackages2 --additionalProbingPath /root/.nuget/fallbackpackages3 --additionalProbingPath /root/.nuget/fallbackpackages4 --additionalProbingPath /root/.nuget/fallbackpackages5  \"/app/bin/Debug/net6.0/Shopping.API.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true
+  shopping.client:
+    image: shoppingclient:dev
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "Shopping.Client"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      - NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages;/root/.nuget/fallbackpackages2;/root/.nuget/fallbackpackages3;/root/.nuget/fallbackpackages4;/root/.nuget/fallbackpackages5
+    volumes:
+      - C:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping\Shopping.Client:/app
+      - C:\Users\gmaharramov\Documents\Documents\Personality\Proje\Shopping:/src
+      - C:\Users\gmaharramov\vsdbg\vs2017u5:/remote_debugger:rw
+      - C:\Users\gmaharramov\.nuget\packages\:/root/.nuget/packages:ro
+      - C:\Program Files (x86)\DevExpress 21.1\Components\Offline Packages:/root/.nuget/fallbackpackages:ro
+      - C:\Program Files (x86)\DevExpress 21.2\Components\Offline Packages:/root/.nuget/fallbackpackages2:ro
+      - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:/root/.nuget/fallbackpackages3:ro
+      - C:\Program Files\DevExpress 22.1\Components\Offline Packages:/root/.nuget/fallbackpackages4:ro
+      - C:\Program Files\DevExpress 22.2\Components\Offline Packages:/root/.nuget/fallbackpackages5:ro
+      - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages --additionalProbingPath /root/.nuget/fallbackpackages2 --additionalProbingPath /root/.nuget/fallbackpackages3 --additionalProbingPath /root/.nuget/fallbackpackages4 --additionalProbingPath /root/.nuget/fallbackpackages5  \"/app/bin/Debug/net6.0/Shopping.Client.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true

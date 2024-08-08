@@ -11,13 +11,10 @@ namespace SHopping.API.Controllers;
  [Route("[controller]")]
  public class ProductController : Controller
  {
-    private readonly ILogger<ProductController> _logger;
     private readonly ProductContext _context;
 
-    public ProductController(ILogger<ProductController> logger,
-                             ProductContext context)
+    public ProductController(ProductContext context)
     {
-        _logger = logger;
         _context = context;
     }
 
